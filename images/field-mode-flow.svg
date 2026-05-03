@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">VisionZen field mode workflow</title>
+  <desc id="desc">Flow diagram from setup to glasses stream to Z conversation and no-API fallback.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#0f766e"/>
+    </marker>
+    <style>
+      .title{font-family:Inter,Arial,sans-serif;fill:#0f172a;font-size:32px;font-weight:800}
+      .step{font-family:Inter,Arial,sans-serif;fill:#0f172a;font-size:19px;font-weight:800}
+      .body{font-family:Inter,Arial,sans-serif;fill:#475569;font-size:15px}
+      .card{fill:#ffffff;stroke:#99f6e4;stroke-width:2}
+      .arrow{fill:none;stroke:#0f766e;stroke-width:4;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="500" rx="28" fill="#f0fdfa"/>
+  <text x="58" y="70" class="title">Field Mode: from setup to hands-free help</text>
+  <g transform="translate(60 140)">
+    <rect class="card" width="185" height="150" rx="18"/>
+    <text x="22" y="38" class="step">1. Load contract</text>
+    <text x="22" y="72" class="body">Bridge URL</text>
+    <text x="22" y="96" class="body">Model policy</text>
+    <text x="22" y="120" class="body">Billing state</text>
+  </g>
+  <g transform="translate(290 140)">
+    <rect class="card" width="185" height="150" rx="18"/>
+    <text x="22" y="38" class="step">2. Register</text>
+    <text x="22" y="72" class="body">Meta callback</text>
+    <text x="22" y="96" class="body">Linked glasses</text>
+    <text x="22" y="120" class="body">Ready state</text>
+  </g>
+  <g transform="translate(520 140)">
+    <rect class="card" width="185" height="150" rx="18"/>
+    <text x="22" y="38" class="step">3. Permission</text>
+    <text x="22" y="72" class="body">Camera access</text>
+    <text x="22" y="96" class="body">Granted through</text>
+    <text x="22" y="120" class="body">Meta AI</text>
+  </g>
+  <g transform="translate(750 140)">
+    <rect class="card" width="185" height="150" rx="18"/>
+    <text x="22" y="38" class="step">4. Stream</text>
+    <text x="22" y="72" class="body">Start glasses</text>
+    <text x="22" y="96" class="body">Receive frame</text>
+    <text x="22" y="120" class="body">Preview locally</text>
+  </g>
+  <g transform="translate(980 140)">
+    <rect class="card" width="160" height="150" rx="18"/>
+    <text x="22" y="38" class="step">5. Ask Z</text>
+    <text x="22" y="72" class="body">Voice loop</text>
+    <text x="22" y="96" class="body">Visual burst</text>
+    <text x="22" y="120" class="body">Answer</text>
+  </g>
+  <path class="arrow" d="M245 215 L290 215"/>
+  <path class="arrow" d="M475 215 L520 215"/>
+  <path class="arrow" d="M705 215 L750 215"/>
+  <path class="arrow" d="M935 215 L980 215"/>
+  <g transform="translate(290 350)">
+    <rect width="620" height="70" rx="18" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+    <text x="28" y="30" class="step">Fallback path: Pro Manual Lane</text>
+    <text x="28" y="54" class="body">Package latest frame + Z-ready prompt for ChatGPT Pro when API billing is off.</text>
+  </g>
+</svg>
+

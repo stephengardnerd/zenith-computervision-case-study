@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">VisionZen cost and privacy guardrails</title>
+  <desc id="desc">Diagram showing API billing disabled by default, explicit API test, idle preview, bounded bursts, and manual fallback.</desc>
+  <defs>
+    <style>
+      .title{font-family:Inter,Arial,sans-serif;fill:#111827;font-size:34px;font-weight:800}
+      .head{font-family:Inter,Arial,sans-serif;fill:#111827;font-size:22px;font-weight:800}
+      .body{font-family:Inter,Arial,sans-serif;fill:#4b5563;font-size:16px}
+      .small{font-family:Inter,Arial,sans-serif;fill:#6b7280;font-size:14px}
+    </style>
+  </defs>
+  <rect width="1200" height="560" rx="28" fill="#fff7ed"/>
+  <text x="60" y="72" class="title">Cost and privacy guardrails are product features</text>
+  <g transform="translate(70 130)">
+    <rect width="310" height="310" rx="24" fill="#ffffff" stroke="#fb923c" stroke-width="3"/>
+    <circle cx="155" cy="85" r="50" fill="#ffedd5" stroke="#f97316" stroke-width="4"/>
+    <path d="M130 85 L180 85" stroke="#f97316" stroke-width="10" stroke-linecap="round"/>
+    <text x="38" y="170" class="head">Default: API locked off</text>
+    <text x="38" y="206" class="body">Realtime minting is refused</text>
+    <text x="38" y="232" class="body">unless the operator enables</text>
+    <text x="38" y="258" class="body">a deliberate test window.</text>
+  </g>
+  <g transform="translate(445 130)">
+    <rect width="310" height="310" rx="24" fill="#ffffff" stroke="#22c55e" stroke-width="3"/>
+    <circle cx="155" cy="85" r="50" fill="#dcfce7" stroke="#22c55e" stroke-width="4"/>
+    <path d="M130 88 L150 108 L186 66" fill="none" stroke="#22c55e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="38" y="170" class="head">Idle: local preview only</text>
+    <text x="38" y="206" class="body">Camera or glasses stream can</text>
+    <text x="38" y="232" class="body">exist locally without sending</text>
+    <text x="38" y="258" class="body">frames to cloud AI.</text>
+  </g>
+  <g transform="translate(820 130)">
+    <rect width="310" height="310" rx="24" fill="#ffffff" stroke="#6366f1" stroke-width="3"/>
+    <circle cx="155" cy="85" r="50" fill="#eef2ff" stroke="#6366f1" stroke-width="4"/>
+    <path d="M122 85 C145 55 170 55 193 85 C170 115 145 115 122 85 Z" fill="none" stroke="#6366f1" stroke-width="8"/>
+    <circle cx="157" cy="85" r="12" fill="#6366f1"/>
+    <text x="38" y="170" class="head">Ask: bounded visual burst</text>
+    <text x="38" y="206" class="body">Only explicit visual questions</text>
+    <text x="38" y="232" class="body">send the latest relevant frame</text>
+    <text x="38" y="258" class="body">for a narrow answer.</text>
+  </g>
+  <text x="72" y="506" class="small">Operating rule: the user can see cost posture before acting; cloud vision requires intent, not mere camera availability.</text>
+</svg>
+

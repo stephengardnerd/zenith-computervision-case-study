@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">VisionZen public architecture diagram</title>
+  <desc id="desc">Architecture diagram showing wearable glasses, iPhone app, hosted bridge, Realtime voice, Perplexity grounding, and manual Pro lane.</desc>
+  <defs>
+    <style>
+      .label{font-family:Inter,Arial,sans-serif;fill:#0f172a;font-weight:800;font-size:24px}
+      .body{font-family:Inter,Arial,sans-serif;fill:#475569;font-size:16px}
+      .small{font-family:Inter,Arial,sans-serif;fill:#64748b;font-size:14px}
+      .box{fill:#ffffff;stroke:#cbd5e1;stroke-width:2}
+      .arrow{fill:none;stroke:#2563eb;stroke-width:4;marker-end:url(#arrow)}
+      .safe{fill:#ecfdf5;stroke:#22c55e}
+      .warn{fill:#fff7ed;stroke:#f97316}
+      .ai{fill:#f5f3ff;stroke:#8b5cf6}
+      .phone{fill:#eff6ff;stroke:#3b82f6}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" rx="28" fill="#f8fafc"/>
+  <text x="60" y="70" class="label" font-size="34">VisionZen system architecture</text>
+  <text x="60" y="102" class="body">Public-safe view: planning, boundaries, and data flow without source code or credentials.</text>
+  <g transform="translate(60 160)">
+    <rect class="box" width="210" height="140" rx="18"/>
+    <text x="24" y="38" class="label">Meta glasses</text>
+    <text x="24" y="70" class="body">Wearable camera</text>
+    <text x="24" y="96" class="body">Hands-free context</text>
+    <text x="24" y="122" class="small">Frames stay local until asked</text>
+  </g>
+  <g transform="translate(340 160)">
+    <rect class="phone" width="230" height="140" rx="18"/>
+    <text x="24" y="38" class="label">iPhone app</text>
+    <text x="24" y="70" class="body">Registration + permission</text>
+    <text x="24" y="96" class="body">Field mode controls</text>
+    <text x="24" y="122" class="small">Start/stop stream + Z</text>
+  </g>
+  <g transform="translate(650 160)">
+    <rect class="warn" width="230" height="140" rx="18"/>
+    <text x="24" y="38" class="label">Hosted bridge</text>
+    <text x="24" y="70" class="body">Contract discovery</text>
+    <text x="24" y="96" class="body">Billing gate</text>
+    <text x="24" y="122" class="small">Secrets never ship in app</text>
+  </g>
+  <g transform="translate(950 160)">
+    <rect class="ai" width="190" height="140" rx="18"/>
+    <text x="24" y="38" class="label">Realtime</text>
+    <text x="24" y="70" class="body">Voice loop</text>
+    <text x="24" y="96" class="body">Visual bursts</text>
+    <text x="24" y="122" class="small">API test only</text>
+  </g>
+  <path class="arrow" d="M270 230 L340 230"/>
+  <path class="arrow" d="M570 230 L650 230"/>
+  <path class="arrow" d="M880 230 L950 230"/>
+  <g transform="translate(650 420)">
+    <rect class="safe" width="230" height="140" rx="18"/>
+    <text x="24" y="38" class="label">Perplexity</text>
+    <text x="24" y="70" class="body">Domain grounding</text>
+    <text x="24" y="96" class="body">How-to + repair context</text>
+    <text x="24" y="122" class="small">Source-backed guidance</text>
+  </g>
+  <g transform="translate(340 420)">
+    <rect class="safe" width="230" height="140" rx="18"/>
+    <text x="24" y="38" class="label">Pro manual lane</text>
+    <text x="24" y="70" class="body">No API spend</text>
+    <text x="24" y="96" class="body">Frame + prompt package</text>
+    <text x="24" y="122" class="small">User-controlled handoff</text>
+  </g>
+  <path class="arrow" d="M765 300 L765 420"/>
+  <path class="arrow" d="M650 490 L570 490"/>
+  <path class="arrow" d="M455 420 L455 300"/>
+  <g transform="translate(60 420)">
+    <rect class="box" width="210" height="140" rx="18"/>
+    <text x="24" y="38" class="label">Field user</text>
+    <text x="24" y="70" class="body">Speaks to Z</text>
+    <text x="24" y="96" class="body">Asks visual questions</text>
+    <text x="24" y="122" class="small">Can interrupt anytime</text>
+  </g>
+  <path class="arrow" d="M270 490 L340 490"/>
+  <text x="60" y="640" class="small">Design intent: camera access is local by default; cloud vision is explicit, bounded, and policy-gated.</text>
+</svg>
+
