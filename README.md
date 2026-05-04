@@ -4,6 +4,8 @@
 
 This repository is a **public case study** for the private VisionZen implementation. It explains the product strategy, technical architecture, implementation milestones, cost controls, and recruiter-relevant skill domains without exposing proprietary source code, credentials, personal data, glasses captures, or private SDK details.
 
+**Name note:** **Z.E.N.I.T.H.** stands for **Zero Effort Neural-net Integration & Tasking Helper**. The name frames the product goal: reduce hands-on friction so a user can ask for help while staying focused on the real-world task in front of them.
+
 ![Status](https://img.shields.io/badge/status-working_prototype-10b981?style=for-the-badge)
 ![Scope](https://img.shields.io/badge/scope-public_case_study-4f46e5?style=for-the-badge)
 ![Privacy](https://img.shields.io/badge/source_code-not_included-111827?style=for-the-badge)
@@ -148,4 +150,3 @@ The private build repo contains the implementation. This public repo is intentio
 Founder-builder, AI product systems, iOS/wearables experimentation, cloud architecture, and applied AI workflows.
 
 Related public case study: [Explanova AI Product Case Study](https://github.com/stephengardnerd/explanova-ai-product-case-study)
-
